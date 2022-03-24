@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+:root {
+  --light: aliceblue;
+  --dark: rgb(37, 37, 37);
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* font-family: 'Cinzel', serif;
+font-family: 'Kaushan Script', cursive; */
+
+a:hover {
+  color: inherit;
+  opacity: 0.8;
+}
+
+h1 {
+  font-family: "Permanent Marker", cursive;
+}
+
+h2 {
+  font-family: "Cinzel", serif;
+}
+
+h3 {
+  /* font-family: "Yuji Boku", serif; */
+  font-family: 'Zen Kurenaido', sans-serif;
+}
+
+h4,
+span.fs-6,
+strong {
+  font-family: "Merriweather", serif;
+  font-weight: bold;
+}
+
+h6, span.fs-6.duration {
+  font-family: "Gloria Hallelujah", cursive;
+  /* font-family: "Cinzel", serif; */
+  /* font-family: "Kaushan Script", cursive; */
+}
+
+blockquote::before {
+  content: "&quot;";
+}
+
+section#landing {
+  /* background-color: rgb(37, 37, 37); */
+  background-color: var(--light);
+  color: rgb(219, 219, 219);
+  z-index: 5;
+}
+
+section#body {
+  z-index: 2;
+  /* background-color: rgb(37, 37, 37); */
+  /* color: aliceblue; */
+  background-color: var(--light);
+  color: var(--dark);
+}
+
+div#portfolio {
+  width: 60%;
+  margin: 0 auto;
+}
+
+q {
+  background-color: var(--dark);
+  color: var(--light);
+  font-family: "Zen Kurenaido", sans-serif;
+  /* font-family: "Lobster", cursive; */
+}
+
+/* nav {
+  position: absolute;
+  background-color: white;
+  color: gray;
+  left: -100%;
+  transition: 1s ease;
+}
+
+nav.open {
+  left: 0;
+} */
