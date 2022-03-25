@@ -19,8 +19,10 @@ hamburger.addEventListener("click", function () {
   navbar.classList.toggle("open");
 });
 
-navbar.addEventListener("click", function () {
+navbar.addEventListener("click", function (ev) {
+  if (!ev.target.matches("summary")) {
   navbar.classList.remove("open");
+  }
 });
 
 let navIndex = navbar.querySelector("ul");
