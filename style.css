@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 :root {
@@ -15,7 +15,7 @@ body {
 }
 
 a {
-  text-decoration: none;
+  /* text-decoration: none; */
   color: inherit;
 }
 
@@ -36,8 +36,11 @@ h2 {
 }
 
 h3 {
-  /* font-family: "Yuji Boku", serif; */
-  font-family: 'Zen Kurenaido', sans-serif;
+  font-family: "Zen Kurenaido", sans-serif;
+}
+
+h3 i {
+  font-size: 20px;
 }
 
 h4,
@@ -47,10 +50,9 @@ strong {
   font-weight: bold;
 }
 
-h6, span.fs-6.duration {
-  font-family: "Gloria Hallelujah", cursive;
-  /* font-family: "Cinzel", serif; */
-  /* font-family: "Kaushan Script", cursive; */
+h6,
+span.fs-6.duration {
+  font-family: "Cutive Mono", monospace;
 }
 
 blockquote::before {
