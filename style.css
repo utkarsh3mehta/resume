@@ -96,8 +96,12 @@ nav > h2 {
   background-color: rgba(0, 0, 0, 0.9);
 }
 
-nav ul {
+nav > ul {
   width: 60%;
+}
+
+nav ul {
+  /* width: 60%; */
   background-color: white;
   color: gray;
   height: 100%;
