@@ -55,10 +55,6 @@ span.fs-6.duration {
   font-family: "Cutive Mono", monospace;
 }
 
-blockquote::before {
-  content: "&quot;";
-}
-
 section#landing {
   /* background-color: rgb(37, 37, 37); */
   background-color: var(--light);
@@ -74,6 +70,48 @@ section#body {
   color: var(--dark);
 }
 
+div#hamburger {
+  width: 50px;
+  height: 50px;
+  background-color: gray;
+}
+
+nav {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  top: 0;
+  height: 100vh;
+  left: -100%;
+  transition: 0.5s ease;
+}
+
+nav.open {
+  left: 0;
+}
+
+nav > h2 {
+  margin: 0;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+nav ul {
+  width: 60%;
+  background-color: white;
+  color: gray;
+  height: 100%;
+  list-style-type: none;
+  overflow-y: auto;
+  background-color: blanchedalmond;
+}
+
+nav > ul li {
+  list-style-type: none;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
 div#portfolio {
   width: 60%;
   margin: 0 auto;
@@ -83,17 +121,44 @@ q {
   background-color: var(--dark);
   color: var(--light);
   font-family: "Zen Kurenaido", sans-serif;
-  /* font-family: "Lobster", cursive; */
+  /* vertical-align: middle; */
 }
 
-/* nav {
-  position: absolute;
-  background-color: white;
-  color: gray;
-  left: -100%;
-  transition: 1s ease;
-}
-
-nav.open {
-  left: 0;
+/* q::before {
+  font-size: 100px;
+  line-height: 0.5;
+  float: left;
 } */
+
+@media (min-width: 576px) {
+  nav > ul {
+    width: 40%;
+  }
+}
+
+@media (min-width: 768px) {
+  div#hamburger {
+    display: none;
+  }
+  nav {
+    position: sticky;
+    bottom: 0;
+    width: 30%;
+  }
+  nav > h2 {
+    color: inherit;
+    background-color: wheat;
+  }
+  nav ul {
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  nav {
+    width: 20%;
+  }
+}
+
+@media (min-width: 1200px) {
+}
