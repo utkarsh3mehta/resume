@@ -28,6 +28,8 @@ navbar.addEventListener("click", function (ev) {
 let navIndex = navbar.querySelector("ul");
 let allH2s = portfolio.querySelectorAll("h2");
 allH2s.forEach((h2) => {
+  h2.style.borderLeft = 'lightgray 1px solid';
+  h2.style.paddingLeft = "5px";
   let h2List = document.createElement("li");
   let h2Detail = document.createElement("details");
   let h2Summary = document.createElement("summary");
