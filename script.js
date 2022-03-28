@@ -7,7 +7,7 @@ window.onload = function (ev) {
 
 let anchorTags = document.querySelectorAll("a");
 anchorTags.forEach((a) => {
-  if (a.getAttribute("href").match(/#*/)) {
+  if (a.getAttribute("href").match(/^#/)) {
     // do nothing
   } else a.setAttribute("target", "_blank");
 });
@@ -21,7 +21,7 @@ hamburger.addEventListener("click", function () {
 
 navbar.addEventListener("click", function (ev) {
   if (!ev.target.matches("summary")) {
-  navbar.classList.remove("open");
+    navbar.classList.remove("open");
   }
 });
 
