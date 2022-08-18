@@ -117,7 +117,7 @@ nav > ul li {
 }
 
 div#portfolio {
-  width: 60%;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -146,9 +146,13 @@ q {
   float: left;
 } */
 
-@media (min-width: 576px) {
+@media (min-width: 554px) {
   nav > ul {
     width: 40%;
+  }
+
+  div#portfolio {
+    width: 75%;
   }
 }
 
@@ -173,6 +177,10 @@ q {
   }
   #tag-line {
     font-size: 3.5rem;
+  }
+
+  div#portfolio {
+    width: 60%;
   }
 }
 
